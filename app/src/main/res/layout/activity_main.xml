@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edTextMail"
+        style="@style/bg_border_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:autofillHints=""
+        android:hint="@string/enterYourEmail"
+        android:imeOptions="actionNext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341"
+        tools:ignore="DuplicateSpeakableTextCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/edTextPass"
+        style="@style/bg_border_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:hint="@string/enterYourPassword"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        app:layout_constraintEnd_toEndOf="@+id/edTextMail"
+        app:layout_constraintStart_toStartOf="@+id/edTextMail"
+        app:layout_constraintTop_toBottomOf="@+id/edTextMail"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/loginCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/rememberMe"
+        android:textSize="@dimen/_24sdp"
+        app:layout_constraintEnd_toEndOf="@+id/edTextPass"
+        app:layout_constraintStart_toStartOf="@+id/edTextPass"
+        app:layout_constraintTop_toBottomOf="@+id/edTextPass" />
+
+
+    <Button
+        android:id="@+id/logInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/logInButton"
+        app:layout_constraintEnd_toEndOf="@+id/loginCheckBox"
+        app:layout_constraintStart_toStartOf="@+id/loginCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/loginCheckBox" />
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/SignUp"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintEnd_toEndOf="@+id/logInButton"
+        app:layout_constraintStart_toStartOf="@+id/logInButton"
+        app:layout_constraintTop_toBottomOf="@+id/logInButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

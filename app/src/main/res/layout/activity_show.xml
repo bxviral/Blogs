@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowActivity">
+
+    <ImageView
+        android:id="@+id/showImageView"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/showTitle"
+        style="@style/bg_border_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:fontFamily="@font/itim_regular"
+        android:hint="@string/blogTitle"
+        android:textColorHint="#808080"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintEnd_toEndOf="@id/showImageView"
+        app:layout_constraintStart_toStartOf="@+id/showImageView"
+        app:layout_constraintTop_toBottomOf="@id/showImageView" />
+
+    <EditText
+        android:id="@+id/showContent"
+        style="@style/bg_border_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:fontFamily="@font/itim_regular"
+        android:hint="@string/blogContent"
+        android:textColorHint="#808080"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintEnd_toEndOf="@id/showTitle"
+        app:layout_constraintStart_toStartOf="@+id/showTitle"
+        app:layout_constraintTop_toBottomOf="@id/showTitle" />
+
+
+    <ImageView
+        android:id="@+id/showImageStar"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/unstar"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="@+id/showContent"
+        app:layout_constraintStart_toStartOf="@+id/showContent"
+        app:layout_constraintTop_toBottomOf="@+id/showContent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

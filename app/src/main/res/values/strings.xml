@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">BlogApp</string>
+    <string name="logInButton">logIn</string>
+    <string name="enterYourPassword">Enter Your Password</string>
+    <string name="enterYourName">Enter Your Name</string>
+    <string name="rememberMe">Remember Me</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="enterYourEmail">Enter Your Email</string>
+    <string name="Learning">Learning</string>
+    <string name="home">Home</string>
+    <string name="navTxtPrivacyPolicy">PrivacyPolicy</string>
+    <string name="LogOut" />
+    <string name="navTxtLogOut">LogOut</string>
+    <string name="Viral">Viral</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="blogTitle">Title</string>
+    <string name="blogContent">Content</string>
+    <string name="addData">addData</string>
+    <string name="takePhoto">Take Photo</string>
+    <string name="GoGallery">Go Gallery</string>
+    <string name="TAB1">TAB1</string>
+    <string name="TAB2">TAB2</string>
+    <string name="profName">Name</string>
+    <string name="profEmail">Email</string>
+    <string name="profPassword">Password</string>
+</resources>
